@@ -6,33 +6,33 @@
         <resource-root path="stream-${stream.version}.jar"/>
         <resource-root path="commons-email-1.3.2.jar"/>
 
-        <resource-root path="congestion-${project.version}.jar"/>
-        <resource-root path="statistics-api-${project.version}.jar"/>
-        <resource-root path="statistics-impl-${project.version}.jar"/>
-        <resource-root path="ss7-ext-api-${project.version}.jar"/>
+        <resource-root path="congestion-${revision}.jar"/>
+        <resource-root path="statistics-api-${revision}.jar"/>
+        <resource-root path="statistics-impl-${revision}.jar"/>
+        <resource-root path="ss7-ext-api-${revision}.jar"/>
 
         <resource-root path="commons-${commons.version}.jar"/>
         <resource-root path="asn-${asn.version}.jar"/>
         <resource-root path="sctp-api-${sctp.version}.jar"/>
         <resource-root path="sctp-impl-${sctp.version}.jar"/>
-        <resource-root path="m3ua-api-${project.version}.jar"/>
-        <resource-root path="m3ua-impl-${project.version}.jar"/>
-        <resource-root path="mtp-api-${project.version}.jar"/>
-        <resource-root path="mtp-${project.version}.jar"/>
-        <resource-root path="sccp-api-${project.version}.jar"/>
-        <resource-root path="sccp-impl-${project.version}.jar"/>
-        <resource-root path="tcap-api-${project.version}.jar"/>
-        <resource-root path="tcap-impl-${project.version}.jar"/>
-        <resource-root path="cap-api-${project.version}.jar"/>
-        <resource-root path="cap-impl-${project.version}.jar"/>
-        <resource-root path="map-api-${project.version}.jar"/>
-        <resource-root path="map-impl-${project.version}.jar"/>
-        <resource-root path="isup-api-${project.version}.jar"/>
-        <resource-root path="isup-impl-${project.version}.jar"/>
-        <resource-root path="inap-api-${project.version}.jar"/>
-        <resource-root path="inap-impl-${project.version}.jar"/>
+        <resource-root path="m3ua-api-${revision}.jar"/>
+        <resource-root path="m3ua-impl-${revision}.jar"/>
+        <resource-root path="mtp-api-${revision}.jar"/>
+        <resource-root path="mtp-${revision}.jar"/>
+        <resource-root path="sccp-api-${revision}.jar"/>
+        <resource-root path="sccp-impl-${revision}.jar"/>
+        <resource-root path="tcap-api-${revision}.jar"/>
+        <resource-root path="tcap-impl-${revision}.jar"/>
+        <resource-root path="cap-api-${revision}.jar"/>
+        <resource-root path="cap-impl-${revision}.jar"/>
+        <resource-root path="map-api-${revision}.jar"/>
+        <resource-root path="map-impl-${revision}.jar"/>
+        <resource-root path="isup-api-${revision}.jar"/>
+        <resource-root path="isup-impl-${revision}.jar"/>
+        <resource-root path="inap-api-${revision}.jar"/>
+        <resource-root path="inap-impl-${revision}.jar"/>
 
-        <resource-root path="restcomm-ss7-service-${project.version}.jar"/>
+        <resource-root path="restcomm-ss7-service-${revision}.jar"/>
     </resources>
 
     <dependencies>

@@ -3,7 +3,8 @@
 	<parent>
 		<artifactId>restcomm-service-parent</artifactId>
 		<groupId>org.restcomm.protocols.ss7</groupId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>restcomm-ss7-service</artifactId>
@@ -13,7 +14,7 @@
 	<properties>
 		<restcomm.name>restcomm-ss7</restcomm.name>
 		<restcomm.vendor>TeleStax</restcomm.vendor>
-		<restcomm.version>${project.version}</restcomm.version>
+		<restcomm.version>${revision}</restcomm.version>
 	</properties>
 
 	<dependencies>
@@ -54,7 +55,7 @@
 		<dependency>
 			<artifactId>shell-server-impl</artifactId>
 			<groupId>org.restcomm.protocols.ss7.management</groupId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 		<dependency>
 			<artifactId>shell-transport</artifactId>
@@ -141,17 +142,17 @@
 		<dependency>
 			<artifactId>statistics-api</artifactId>
 			<groupId>org.restcomm.protocols.ss7.statistics</groupId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>	
 		<dependency>
 			<artifactId>statistics-impl</artifactId>
 			<groupId>org.restcomm.protocols.ss7.statistics</groupId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>	
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}-${project.version}</finalName>
+		<finalName>${project.artifactId}-${revision}</finalName>
 	</build>
 
 </project>

@@ -4,7 +4,8 @@
 	<parent>
 		<artifactId>m3ua</artifactId>
 		<groupId>org.restcomm.protocols.ss7.m3ua</groupId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>m3ua-impl</artifactId>
@@ -19,7 +20,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.management</groupId>
 			<artifactId>shell-server-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>           
 		<dependency>
 			<groupId>log4j</groupId>
@@ -33,7 +34,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.m3ua</groupId>
 			<artifactId>m3ua-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 
 		<!-- javolution -->
@@ -73,7 +74,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}-${project.version}</finalName>
+		<finalName>${project.artifactId}-${revision}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

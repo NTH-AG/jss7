@@ -6,7 +6,8 @@
 	<parent>
 		<artifactId>ss7-trace-parser-parent</artifactId>
 		<groupId>org.restcomm.protocols.ss7.tools.traceparser</groupId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>ss7-trace-parser-bootstrap</artifactId>
@@ -16,7 +17,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.tools.traceparser</groupId>
 			<artifactId>ss7-trace-parser</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 
 		<dependency>
@@ -119,7 +120,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.scheduler</groupId>
 			<artifactId>scheduler</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
 		</dependency>
 	</dependencies>
 

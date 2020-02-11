@@ -5,7 +5,8 @@
     <parent>
         <groupId>org.restcomm.protocols.ss7</groupId>
         <artifactId>restcomm-ss7-wildfly</artifactId>
-        <version>8.0.0-SNAPSHOT</version>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>restcomm-ss7-wildfly-modules</artifactId>
@@ -100,48 +101,48 @@
         <dependency>
             <groupId>org.restcomm.protocols.ss7.congestion</groupId>
             <artifactId>congestion</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
 		<dependency>
 			<artifactId>scheduler</artifactId>
 			<groupId>org.restcomm.protocols.ss7.scheduler</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
 		</dependency>
 
 		<dependency>
 			<artifactId>shell-server-api</artifactId>
 			<groupId>org.restcomm.protocols.ss7.management</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
 		</dependency>
 		<dependency>
 			<artifactId>shell-server-impl</artifactId>
 			<groupId>org.restcomm.protocols.ss7.management</groupId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 		<dependency>
 			<artifactId>shell-transport</artifactId>
 			<groupId>org.restcomm.protocols.ss7.management</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
 		</dependency>
 
         <!-- Service -->
         <dependency>
             <groupId>org.restcomm.protocols.ss7</groupId>
             <artifactId>restcomm-ss7-service</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.ss7ext</groupId>
 			<artifactId>ss7-ext-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 
 <!--
         <dependency>
             <groupId>org.restcomm.protocols.ss7.management</groupId>
             <artifactId>shell-client</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 -->
 
@@ -149,12 +150,12 @@
         <dependency>
             <groupId>org.restcomm.protocols.ss7.statistics</groupId>
             <artifactId>statistics-api</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <groupId>org.restcomm.protocols.ss7.statistics</groupId>
             <artifactId>statistics-impl</artifactId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- Commons -->
@@ -187,96 +188,96 @@
         <dependency>
             <artifactId>mtp</artifactId>
             <groupId>org.restcomm.protocols.ss7.mtp</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>mtp-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.mtp</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- M3UA -->
         <dependency>
             <artifactId>m3ua-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.m3ua</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>m3ua-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.m3ua</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- SCCP -->
         <dependency>
             <artifactId>sccp-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.sccp</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>sccp-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.sccp</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- TCAP -->
         <dependency>
             <artifactId>tcap-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.tcap</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>tcap-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.tcap</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- CAP -->
         <dependency>
             <artifactId>cap-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.cap</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>cap-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.cap</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- MAP -->
         <dependency>
             <artifactId>map-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.map</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>map-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.map</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- ISUP -->
         <dependency>
             <artifactId>isup-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.isup</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>isup-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.isup</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
         <!-- INAP -->
         <dependency>
             <artifactId>inap-api</artifactId>
             <groupId>org.restcomm.protocols.ss7.inap</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
         <dependency>
             <artifactId>inap-impl</artifactId>
             <groupId>org.restcomm.protocols.ss7.inap</groupId>
-            <version>${project.version}</version>
+            <version>${revision}</version>
         </dependency>
 
     </dependencies>

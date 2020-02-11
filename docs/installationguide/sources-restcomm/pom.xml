@@ -48,7 +48,7 @@
 								<artifactItem>
 									<groupId>${project.groupId}</groupId>
 									<artifactId>restcomm-ss7-installguide-sources</artifactId>
-									<version>${project.version}</version>
+									<version>${revision}</version>
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${basedir}/src/main/resources</outputDirectory>
@@ -56,7 +56,7 @@
 								<artifactItem>
 									<groupId>org.restcomm.protocols.ss7.docs.commons</groupId>
 									<artifactId>restcomm-ss7-commons-sources</artifactId>
-									<version>${project.version}</version>
+									<version>${revision}</version>
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${basedir}/src/main/resources</outputDirectory>

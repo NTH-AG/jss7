@@ -5,7 +5,8 @@
 	<parent>
 		<artifactId>map-parent</artifactId>
 		<groupId>org.restcomm.protocols.ss7.map</groupId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>map-load</artifactId>
@@ -42,7 +43,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.ss7ext</groupId>
 			<artifactId>ss7-ext-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.map</groupId>
@@ -141,12 +142,12 @@
 		<dependency>
 			<artifactId>statistics-api</artifactId>
 			<groupId>org.restcomm.protocols.ss7.statistics</groupId>
-			<!-- <version>${project.version}</version> -->
+			<!-- <version>${revision}</version> -->
 		</dependency>	
 		<dependency>
 			<artifactId>statistics-impl</artifactId>
 			<groupId>org.restcomm.protocols.ss7.statistics</groupId>
-			<!-- <version>${project.version}</version> -->
+			<!-- <version>${revision}</version> -->
 		</dependency>						
 
 		<dependency>
@@ -188,7 +189,7 @@
 										<artifactItem>
 											<groupId>${project.groupId}</groupId>
 											<artifactId>${project.artifactId}</artifactId>
-											<version>${project.version}</version>
+											<version>${revision}</version>
 											<type>jar</type>
 											<overWrite>true</overWrite>
 											<outputDirectory>

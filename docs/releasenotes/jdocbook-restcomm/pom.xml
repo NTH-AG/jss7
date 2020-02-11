@@ -60,7 +60,7 @@
 								<artifactItem>
 									<groupId>${project.groupId}</groupId>
 									<artifactId>restcomm-ss7-releasenotes-sources-restcomm</artifactId>
-									<version>${project.version}</version>
+									<version>${revision}</version>
 									<type>jar</type>
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.build.directory}/docbook/resources</outputDirectory>

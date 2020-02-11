@@ -4,7 +4,8 @@
 	<parent>
 		<artifactId>isup-parent</artifactId>
 		<groupId>org.restcomm.protocols.ss7.isup</groupId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>isup-impl</artifactId>
@@ -29,7 +30,7 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>isup-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 		<dependency>
 			<groupId>concurrent</groupId>
@@ -47,7 +48,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}-${project.version}</finalName>
+		<finalName>${project.artifactId}-${revision}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

@@ -3,10 +3,10 @@
 
     <resources>
         <resource-root path="javolution-${javolution.version}.jar"/>
-        <resource-root path="shell-server-api-${project.version}.jar"/>
-        <resource-root path="shell-server-impl-${project.version}.jar"/>
-        <resource-root path="shell-transport-${project.version}.jar"/>
-        <resource-root path="scheduler-${project.version}.jar"/>
+        <resource-root path="shell-server-api-${revision}.jar"/>
+        <resource-root path="shell-server-impl-${revision}.jar"/>
+        <resource-root path="shell-transport-${revision}.jar"/>
+        <resource-root path="scheduler-${revision}.jar"/>
     </resources>
 
     <dependencies>

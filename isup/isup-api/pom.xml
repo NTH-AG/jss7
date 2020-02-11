@@ -4,7 +4,8 @@
 	<parent>
 		<artifactId>isup-parent</artifactId>
 		<groupId>org.restcomm.protocols.ss7.isup</groupId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>isup-api</artifactId>
@@ -32,6 +33,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}-${project.version}</finalName>
+		<finalName>${project.artifactId}-${revision}</finalName>
 	</build>
 </project>

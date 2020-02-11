@@ -4,7 +4,8 @@
 	<parent>
 		<groupId>org.restcomm.protocols.ss7.mtp</groupId>
 		<artifactId>mtp-parent</artifactId>
-		<version>8.0.0-SNAPSHOT</version>
+		<version>${revision}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>mtp</artifactId>
@@ -27,7 +28,7 @@
 		<dependency>
 			<groupId>org.restcomm.protocols.ss7.ss7ext</groupId>
 			<artifactId>ss7-ext-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 
 		<dependency>
@@ -68,7 +69,7 @@
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>mtp-api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 		</dependency>
 	</dependencies>
 
