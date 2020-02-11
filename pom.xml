@@ -2,10 +2,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.4.RELEASE</version>
+		<relativePath/>
+	</parent>
+<!--
+	<parent>
 		<groupId>org.mobicents</groupId>
 		<artifactId>restcomm-parent</artifactId>
-		<version>2.27.32</version> <!-- parent pom version -->
+		<version>2.27.32</version>
 	</parent>
+-->
 
 	<artifactId>ss7-parent</artifactId>
 	<groupId>org.restcomm.protocols.ss7</groupId>
@@ -16,7 +24,7 @@
 	<name>RestComm jSS7 :: ${project.artifactId}</name>
 
 	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
 
 		<!-- maven.test.skip>false</maven.test.skip -->
 		<restcomm.tools.mavenplugin.eclipse.version>
@@ -31,18 +39,17 @@
 		<junit.version>3.8.1</junit.version>
 		<testng.version>6.2</testng.version>
 		<javolution.version>5.5.1</javolution.version>
-		<compiler.plugin.version>2.0.2</compiler.plugin.version>
-		<compile.source>1.7</compile.source>
 		<!-- restcomm but not strictly ss7 -->
 		<asn.version>2.2.0-143</asn.version>
 		<stream.version>1.0.0.CR1</stream.version>
-		<sctp.version>2.0.0-166</sctp.version>
+		<sctp.version>2.2.0-NTH-SNAPSHOT</sctp.version>
 		<commons.version>1.0.0.CR1</commons.version>
-		<netty.version>4.0.33.Final</netty.version>
 
 
 		<version.wildfly.as>10.1.0.Final</version.wildfly.as>
 		<version.wildfly.core>2.2.0.Final</version.wildfly.core>
+
+		<jboss.version>5.1.0.GA</jboss.version>
 
 		<revision>8.0.1-NTH-SNAPSHOT</revision>
 	</properties>
@@ -473,13 +480,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${compiler.plugin.version}</version>
-				<configuration>
-					<source>${compile.source}</source>
-					<target>${compile.source}</target>
-					<debug>${compile.debug}</debug>
-					<encoding>${project.build.sourceEncoding}</encoding>
-				</configuration>
 			</plugin>
 
 			<plugin>
@@ -564,17 +564,66 @@
 		</repository>
 
 		<!-- the place to extra repos -->
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Maven Repository Group</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>jboss-deprecated-repository</id>
+			<name>JBoss Deprecated Maven Repository</name>
+			<url>https://repository.jboss.org/nexus/content/repositories/deprecated/
+			</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
 	</repositories>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<uniqueVersion>false</uniqueVersion>
-			<id>deployment</id>
-			<url>http://dev1-git1.int.ch:8675/nexus/content/repositories/snapshot-policy</url>
-		</snapshotRepository>
-		<repository>
-			<id>deployment</id>
-			<url>http://dev1-git1.int.ch:8675/nexus/content/repositories/releases</url>
-		</repository>
-	</distributionManagement>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>restcomm-public-repository-group</id>
+			<name>Restcomm Public Maven Repository Group</name>
+			<url>https://oss.sonatype.org/content/groups/public</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Maven Repository Group</name>
+			<url>https://repository.jboss.org/nexus/content/groups/public/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
 </project>
