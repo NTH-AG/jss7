@@ -99,10 +99,12 @@
 				<dependency>
 					<groupId>org.testng</groupId>
 					<artifactId>testng</artifactId>
+					<version>${testng.version}</version>
 				</dependency>
 				<dependency>
 					<groupId>org.restcomm.protocols.ss7.sccp</groupId>
 					<artifactId>sccp-impl</artifactId>
+					<version>${revision}</version>
 					<scope>test</scope>
 				</dependency>
 				<dependency>
@@ -115,6 +117,7 @@
 				<dependency>
 					<groupId>org.restcomm.protocols.ss7.mtp</groupId>
 					<artifactId>mtp-api</artifactId>
+					<version>${revision}</version>
 					<scope>test</scope>
 				</dependency>
 			</dependencies>
